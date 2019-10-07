@@ -1,2 +1,5 @@
 include ':app'
 rootProject.name='Learn And'
+include ':core'
+include ':player'
+include ':analytics'
