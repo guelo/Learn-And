@@ -1,4 +1,4 @@
-package com.gaali.core.log
+package com.gaali.core.appinterfaces
 
 interface IAppLog {
 

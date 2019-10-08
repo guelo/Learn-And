@@ -1,4 +1,4 @@
-package com.gaali.core.player
+package com.gaali.core.appinterfaces
 
 interface IAppPlayer {
 

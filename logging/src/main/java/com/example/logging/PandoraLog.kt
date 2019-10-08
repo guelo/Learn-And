@@ -1,5 +1,6 @@
-package com.gaali.core.log.impl
+package com.example.logging
 
+/*
 import com.gaali.core.log.IAppLog
 
 internal class PandoraLog : IAppLog {
@@ -13,4 +14,4 @@ internal class PandoraLog : IAppLog {
     ) {
         println("Level: $level ,Message: $message")
     }
-}
+}*/

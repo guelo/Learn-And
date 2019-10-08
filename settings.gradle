@@ -1,4 +1,4 @@
-include ':app'
+include ':app', ':logging'
 rootProject.name='Learn And'
 include ':core'
 include ':player'

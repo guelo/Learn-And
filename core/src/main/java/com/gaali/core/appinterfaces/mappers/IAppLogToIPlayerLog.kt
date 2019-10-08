@@ -1,10 +1,10 @@
-package com.gaali.core.player.mapper
+package com.gaali.core.appinterfaces.mappers
 
-import com.gaali.core.log.IAppLog
-import com.gaali.core.log.IAppLog.Filter
+import com.gaali.core.appinterfaces.IAppLog
+import com.gaali.core.appinterfaces.IAppLog.Filter
 import com.gaali.player.IPlayerLog
 
-class PlayerLogMapper(val iAppLog: IAppLog) : IPlayerLog {
+internal class IAppLogToIPlayerLog(val iAppLog: IAppLog) : IPlayerLog {
     override fun d(tag: String?, message: String, throwable: Throwable?) {
         iAppLog.log(
             IAppLog.Level.DEBUG,

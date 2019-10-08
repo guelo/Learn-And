@@ -1,9 +1,11 @@
 package com.gaali.player
 
-class ExoPlayer(private val log: IPlayerLog) : IPlayer {
+import javax.inject.Inject
+
+internal class ExoPlayer @Inject constructor(private val log: IPlayerLog) : IPlayer {
 
     companion object {
-        private val TAG = this::class.simpleName
+        private val TAG = this::class.toString()
     }
 
     override fun play() {

@@ -1,9 +1,11 @@
-package com.gaali.core.player.impl
+package com.gaali.core.appinterfaces.mappers
 
-import com.gaali.core.player.IAppPlayer
+import com.gaali.core.appinterfaces.IAppPlayer
 import com.gaali.player.IPlayer
+import javax.inject.Inject
 
-class SxmpPlayer(private val player: IPlayer) : IAppPlayer {
+internal class IPlayerToIAppPlayer @Inject constructor(private val player: IPlayer) :
+    IAppPlayer {
     override fun load(url: String) {
         player.load(url)
     }

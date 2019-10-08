@@ -2,10 +2,14 @@ package com.ggaali.analytics.impl
 
 import com.ggaali.analytics.IAnalytics
 import com.ggaali.analytics.IAnalyticsLog
-import com.ggaali.analytics.impl.DefaultAnalyticsLog
+import javax.inject.Inject
 
-class FirebaseAnalytics(private val logger: IAnalyticsLog? = DefaultAnalyticsLog()) : IAnalytics {
+internal class FirebaseAnalytics @Inject constructor(
+    private val logger: IAnalyticsLog
+) : IAnalytics {
+
     override fun logEvent(eventName: String, eventMap: MutableMap<String, String>) {
-        logger?.log(eventName, eventMap)
+        logger.log(eventName, eventMap)
     }
+
 }

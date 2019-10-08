@@ -1,12 +1,13 @@
-package com.gaali.core.analytics.mapper
+package com.gaali.core.appinterfaces.mappers
 
-import com.gaali.core.log.IAppLog
+import com.gaali.core.appinterfaces.IAppLog
 import com.ggaali.analytics.IAnalyticsLog
+import javax.inject.Inject
 
-class AnalyticsLogMapper(private val appLog: IAppLog) : IAnalyticsLog {
+internal class IAppLogToIAnalyticsLog @Inject constructor(private val appLog: IAppLog) : IAnalyticsLog {
 
     companion object {
-        private val TAG = AnalyticsLogMapper::class.simpleName
+        private val TAG = IAppLogToIAnalyticsLog::class.toString()
     }
 
 
